@@ -39,7 +39,7 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout
-        uses: uses: actions/checkout@v4.2.2
+        uses: actions/checkout@v4.2.2
 
       - name: Setup Python
         uses: uses: actions/setup-python@v5.4.0
