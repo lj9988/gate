@@ -39,10 +39,10 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: uses: actions/checkout@v4.2.2
 
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: uses: actions/setup-python@v5.4.0
         with:
           python-version: '3.11'
           cache: pip
@@ -110,16 +110,16 @@ jobs:
           exit 1
 
       - name: Setup Pages
-        uses: actions/configure-pages@v5
+        uses: uses: actions/configure-pages@v5.0.0
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v3.0.1
         with:
           path: public
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: uses: actions/deploy-pages@v4.0.5
 
       - name: Show site URL
         run: |
